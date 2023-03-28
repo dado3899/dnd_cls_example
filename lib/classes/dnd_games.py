@@ -12,7 +12,7 @@ class DndGame(Base):
 
     # Validation documentation https://docs.sqlalchemy.org/en/20/orm/mapped_attributes.html
     @validates("player_class")
-    def validate_email(self, key, dnd_class):
+    def validate_player(self, key, dnd_class):
         classlist = ["Warlock","Warrior","Cleric","Bard","Wizard"]
         if dnd_class not in classlist:
             raise ValueError("Not valid class")
