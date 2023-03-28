@@ -1,0 +1,27 @@
+As a user I will
+Open the program
+Enter the word DM or Player in the console
+It will then ask if we are a current user or a new user
+DM
+    if current
+    Use name to validate existence
+    if new
+        Create new unique name
+Player
+    if current
+        Use name to validate existence
+    if new
+        Create new unique name
+
+
+             \||/
+                |  @___oo
+      /\  /\   / (__,,,,|
+     ) /^\) ^\/ _)
+     )   /^\/   _)
+     )   _ /  / _)
+ /\  )/\/ ||  | )_)
+<  >      |(,,) )__)
+ ||      /    \)___)\
+ | \____(      )___) )___
+  \______(_______;;; __;;;
