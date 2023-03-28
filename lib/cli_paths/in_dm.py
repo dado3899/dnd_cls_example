@@ -2,6 +2,7 @@ from classes.dm_table import DungeonMaster
 from classes.player_table import Player
 from classes.dnd_games import DndGame
 from cli_paths.dm_logged_in import dm_logged_in
+# If we are logged in run the dm log in
 def run_in_dm(session):
     indm = True
     while indm:
@@ -11,7 +12,6 @@ def run_in_dm(session):
         elif user_type == "Existing":
             username = input("Type Username: ")
             currentUser=DungeonMaster.get_by_name(session,username)
-            
             dm_logged_in(session,currentUser)
         else:
             print("Not valid input")

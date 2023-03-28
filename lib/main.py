@@ -22,12 +22,12 @@ if __name__ == '__main__':
     \______(_______;;; __;;;
   '''
     )
-    # Checks for player or dm
+    
     with Session(engine) as session:
         inprogram = True
         while inprogram:
+            # Checks for player or dm
             userinput1 = input("Are you a Player or DM: ")
-            # userinput
             if userinput1 == "DM":
                 run_in_dm(session)
             elif userinput1 == "Player":
